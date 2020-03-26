@@ -24,4 +24,9 @@ class Date extends Model
 	{
 		return $this->hasMany('App\Power');
     }
+
+	public function output()
+	{
+		return $this->hasOne('App\Output');
+    }
 }
