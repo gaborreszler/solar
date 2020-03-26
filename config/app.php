@@ -123,6 +123,22 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+	/*
+    |--------------------------------------------------------------------------
+    | SAJ settings
+    |--------------------------------------------------------------------------
+    |
+    |
+    |
+    */
+
+	'saj' => [
+		'plant_uid' => env('SAJ_PLANTUID'),
+		'device_serial_number' => env('SAJ_DEVICE_SERIAL_NUMBER'),
+		'session_id' => env('SAJ_SESSION_ID'),
+		'remember_token' => env('SAJ_REMEMBER_TOKEN'),
+	],
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
