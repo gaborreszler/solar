@@ -19,4 +19,9 @@ class Date extends Model
 	 * @var bool
 	 */
 	public $timestamps = false;
+
+	public function powers()
+	{
+		return $this->hasMany('App\Power');
+    }
 }
