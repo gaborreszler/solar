@@ -25,7 +25,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-		$schedule->command(ImportSajSolarPlantDatas::class, ['--no-interaction'])->everyTenMinutes();
+		$schedule->command(ImportSajSolarPlantDatas::class, ['--no-interaction'])
+			->everyTenMinutes()
+			->between('04:45', '20:45');//approximately the earliest sunrise and the latest sunset time
     }
 
     /**
